@@ -1,0 +1,161 @@
+/* songsPage.css */
+
+body {
+    background-image: url('img/01.jpg');
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    background: transparent;
+    width: auto;
+    height: auto; /* Adjusted height */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column; /* Changed to column layout */
+    align-items: center; /* Center align items */
+    padding: 20px;
+    max-width: 80vw; /* Adjusted maximum width */
+    margin-top: 20px; /* Reduced margin-top */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Adjusted margin-top */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional Styles for the Now Playing Section */
+.now-playing {
+    color: #33cc00;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scrolling 10s linear infinite;
+    max-width: 100%; /* Thêm max-width để ngăn tràn ra khỏi khung */
+}
+
+@keyframes scrolling {
+    20% {
+        transform: translateX(20%);
+    }
+    80% {
+        transform: translateX(-20%);
+    }
+}
+
+.now-playing h1, .now-playing h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Giữ cho phần tử không vượt quá chiều rộng của phần tử cha */
+}
+
+.now-playing p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Giữ cho phần tử không vượt quá chiều rộng của phần tử cha */
+    margin: 0;
+}
+
+/* Additional Styles for the Add Song Form */
+.add-song-form {
+    text-align: center;
+}
+
+.add-song-form h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+}
+
+.add-song-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-song-form form div {
+    margin-bottom: 10px;
+}
+
+.add-song-form form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    width: 80%; /* Adjusted width */
+}
+
+.add-song-form form button {
+    margin-top: 10px;
+}
+
+/* Additional Styles for Messages */
+.messages {
+    text-align: center;
+    margin-top: 20px; /* Adjusted margin-top */
+}
+
+.messages h2 {
+    margin: 10px 0;
+}
+
+/* Additional Styles for Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Additional Styles for Form Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
